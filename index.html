@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Registration Form</title>
+</head>
+<body bgcolor="#64b5f6">
+  
+  <h1 style="background-color: rgb(166, 0, 255);text-align: center;">Student Registration Form</h1>
+  <h1 style="border: 1px solid teal;">Hello!</h1>
+  <h1>Before you fill it up</h1> <hr>
+  <h1>Read the instructions carefully</h1>
+  <ul class="instructions">
+    <li>Please fill in all <span style="color: #d9534f;">information needed</span> that marked with an asterisk (<span style="color:#e67a7a;">*</span>).</li>
+    <li>Use a valid email address for correspondence.</li>
+    <li>Choose your course carefully from the dropdown list.</li>
+  </ul>
+
+
+  <form action="#" method="post">
+   
+    <form action="#" method="post" novalidate>
+    <table order="1" cellpadding="10" cellspacing="0">
+      
+      <tr>
+        <th for="firstname">First Name:</th>
+        <td><input type="text" id="firstname" name="firstname" placeholder="Enter your First Name" required /></td>
+      </tr>
+      <tr>
+       <th for="lastname">Last Name:</th>
+        <td><input type="text" id="lastname" name="lastname" placeholder="Enter your Last Name" required /></td> 
+      </tr>
+
+      <tr>
+        <th for="email">School Email Address:</th>
+        <td><input type="email" id="email" name="email" placeholder="lastname.firstname@llcc.edu.ph" required /></td>
+      </tr>
+
+      <tr>
+        <th>Gender</th>
+        <td class="gender-options">
+          <label><input type="radio" name="gender" value="male" required /> Male</label>
+          <label><input type="radio" name="gender" value="female" /> Female</label>
+
+        </td>
+      </tr>
+
+      <tr>
+        <th for="number">Contact Number:</th>
+        <td><input type="number" id="number" name="number" placeholder="Enter your Contact Number" required /></td>
+      </tr>
+
+  
+      <tr>
+        <th for="course">Select Course:</th>
+        <td>
+          <select id="course" name="course" required>
+            <option value="" disabled selected>-- Choose a course --</option>
+            <option value="bit_computer_technology">BIT Computer Technology</option>
+            <option value="bit_electronics_technology">BIT Electronics Technology</option>
+            <option value="beed_elementary_education">BEED Elementary Education</option>
+            <option value="bshm_hospitality_management">BSHM Hospitality Management</option>
+            <option value="bstm_tourism_management">BSTM Tourism Management</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th for="yearlevel">Year Level:</th>
+        <td><input type="yearlevel" id="yearlevel" name="yearlevel" placeholder="Enter your Year Level" required /></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button type="submit">Register</button>
+        </td>
+      </tr>
+
+    </table>
+  </form>
+    
+</body>
+</html>
